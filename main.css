@@ -16,3 +16,19 @@ body {
   margin: auto;
   padding: 50px;
 }
+
+.calculator__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+input {
+  text-align: right;
+  height: 40px;
+  width: 200px;
+}
