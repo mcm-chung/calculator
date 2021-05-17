@@ -1,10 +1,6 @@
 const numbers = document.querySelectorAll(".calculator__buttons__num");
 console.log(numbers);
 const clear = document.querySelector(".calculator__buttons__op__clear");
-// const negative = document.querySelector(".calculator__buttons__op__negative");
-const percentage = document.querySelector(
-  "calculator__buttons__op__percentage"
-);
 const divide = document.querySelector(".calculator__buttons__op__divide");
 const multiply = document.querySelector(".calculator__buttons__op__multiply");
 const minus = document.querySelector(".calculator__buttons__op__minus");
@@ -130,6 +126,7 @@ const getTotal = () => {
     total = parseprevValue - parsecurrentValue;
     return total;
   }
+
   // else if (operation == "+/-") {
   //   if parsecurrentValue < 0
   //     return parse

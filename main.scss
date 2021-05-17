@@ -14,11 +14,12 @@
 //   background-size: cover;
 // }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .calculator {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   justify-items: center;
+// }
 
 .header {
   &__title {
@@ -29,27 +30,10 @@ body {
 }
 
 // .calculator {
-//   &__buttons {
-//     &__op {
-//       display: grid;
-//       grid-template-columns: 1fr 1fr 1fr 1fr;
-//       grid-gap: 5px;
-//       margin-top: 20px;
-//     }
-//   }
-// }
-
-// .calculator {
 //   width: 320px;
 //   height: 520px;
 //   background-color: grey;
 //   position: relative;
-// }
-
-// .calculator {
-//   display: flex;
-//   justify-content: center;
-//   justify-items: center;
 // }
 
 .calculator__buttons {

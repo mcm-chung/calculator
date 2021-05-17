@@ -5,10 +5,11 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
-body {
+.calculator {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
 }
 
 .header__title {
