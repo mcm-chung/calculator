@@ -5,17 +5,19 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
-.calculator {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-
 .header__title {
   text-align: center;
   margin: auto;
-  padding: 50px;
+  padding: 10px;
+  font-size: 35px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calculator__buttons {
@@ -26,6 +28,14 @@
   cursor: pointer;
   width: 200px;
   height: 200px;
+}
+
+.calculator__buttons__op__equal {
+  grid-row: 2/5;
+}
+
+.calculator__buttons__op__clear {
+  grid-column: 1/4;
 }
 
 input {
