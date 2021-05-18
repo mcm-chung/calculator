@@ -32,14 +32,47 @@ body {
 
 .calculator__buttons__op__equal {
   grid-row: 2/5;
+  border-color: paleturquoise;
+  border-radius: 30px;
 }
 
 .calculator__buttons__op__clear {
   grid-column: 1/4;
+  border-color: paleturquoise;
+  border-radius: 30px;
+}
+
+.calculator__buttons__op__add {
+  border-color: paleturquoise;
+  background-color: paleturquoise;
+  border-radius: 30px;
+}
+
+.calculator__buttons__op__minus {
+  border-color: paleturquoise;
+  background-color: paleturquoise;
+  border-radius: 30px;
+}
+
+.calculator__buttons__op__multiply {
+  border-color: paleturquoise;
+  background-color: paleturquoise;
+  border-radius: 30px;
+}
+
+.calculator__buttons__op__divide {
+  border-color: paleturquoise;
+  background-color: paleturquoise;
+  border-radius: 30px;
+}
+
+.calculator__buttons__num {
+  border-radius: 30px;
 }
 
 input {
   text-align: right;
   height: 40px;
   width: 200px;
+  border-radius: 30px;
 }
