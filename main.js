@@ -14,18 +14,22 @@ console.log(display);
 //   display.innerHTML = numbers.innerHTML;
 // });
 let prevValue = "";
-let operation = null;
 let currentValue = "";
+let operation = null;
 // const updateOutput = (number) => {
 //   display.value = number;
 // };
+
+const updateOutput = (number) => {
+  display.value = number;
+};
+
 numbers.forEach((number) => {
   number.addEventListener("click", (e) => {
     const storeValue = e.target.innerHTML;
     currentValue = currentValue + storeValue;
     console.log(currentValue);
     updateOutput(currentValue);
-    // getTotal();
   });
 });
 
@@ -36,59 +40,35 @@ clear.addEventListener("click", (e) => {
   updateOutput(0);
 });
 
-// percentage.addEventListener("click", (e) => {
-//   updateOutput("%");
-// });
-
 multiply.addEventListener("click", (e) => {
-  const firstValue = display.value;
   operation = "x";
   prevValue = currentValue;
   currentValue = "";
-
-  // updateOutput(firstValue + operation );
   console.log(display.value);
-  // getTotal();
-
   return;
 });
 
 add.addEventListener("click", (e) => {
-  const firstValue = display.value;
   operation = "+";
   prevValue = currentValue;
   currentValue = "";
-
-  // updateOutput(firstValue + operation );
   console.log(display.value);
-  // getTotal();
-
   return;
 });
 
 divide.addEventListener("click", (e) => {
-  const firstValue = display.value;
   operation = "/";
   prevValue = currentValue;
   currentValue = "";
-
-  // updateOutput(firstValue + operation );
   console.log(display.value);
-  // getTotal();
-
   return;
 });
 
 minus.addEventListener("click", (e) => {
-  const firstValue = display.value;
   operation = "-";
   prevValue = currentValue;
   currentValue = "";
-
-  // updateOutput(firstValue + operation );
   console.log(display.value);
-  // getTotal();
-
   return;
 });
 
@@ -100,19 +80,7 @@ const getTotal = () => {
   const parseprevValue = parseFloat(prevValue);
   console.log(parsecurrentValue, parseprevValue);
   let total = 0;
-  // if (operation == "x") {
-  //   total = parsecurrentValue * parseprevValue;
-  //   return total;
-  // } else if (operation == "+") {
-  //   total = parsecurrentValue + parseprevValue;
-  //   return total;
-  // } else if (operation == "/") {
-  //   total = parsecurrentValue / parseprevValue;
-  //   return total;
-  // } else if (operation == "-") {
-  //   total = parsecurrentValue - parseprevValue;
-  //   return total;
-  // }
+
   if (operation == "x") {
     total = parseprevValue * parsecurrentValue;
     return total;
@@ -125,19 +93,7 @@ const getTotal = () => {
   } else if (operation == "-") {
     total = parseprevValue - parsecurrentValue;
     return total;
-  }
-
-  // else if (operation == "+/-") {
-  //   if parsecurrentValue < 0
-  //     return parse
-  //   total = parsecurrentValue - parseprevValue;
-  //   return total;
-  // }
-  else return NaN;
-
-  // console.log(total);
-  // updateOutput(total);
-  return total;
+  } else return NaN;
 };
 
 equal.addEventListener("click", (e) => {
@@ -147,7 +103,3 @@ equal.addEventListener("click", (e) => {
   operator = null;
   prevValue = "";
 });
-
-const updateOutput = (number) => {
-  display.value = number;
-};
