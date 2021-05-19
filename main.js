@@ -9,16 +9,9 @@ const equal = document.querySelector(".calculator__buttons__op__equal");
 const display = document.querySelector(".display");
 console.log(display);
 
-// numbers.addEventListener("click", (e) => {
-//   alert;
-//   display.innerHTML = numbers.innerHTML;
-// });
 let prevValue = "";
 let currentValue = "";
 let operation = null;
-// const updateOutput = (number) => {
-//   display.value = number;
-// };
 
 const updateOutput = (number) => {
   display.value = number;
